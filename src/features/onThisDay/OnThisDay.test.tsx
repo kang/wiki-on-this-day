@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { store } from '../../app/store';
 import { OnThisDay } from './OnThisDay';
 
-import * as onThisDaySlice from './onThisDaySlice';
+import * as onThisDaySlice from './otdSlice';
 
 const renderOnThisDay = () => {
   render(

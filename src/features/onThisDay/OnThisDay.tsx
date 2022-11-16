@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { getOtdDate } from './helper';
 import styles from './OnThisDay.module.css';
-import { fetchOnThisDayNews, selectOnThisDay } from './onThisDaySlice';
+import { fetchOnThisDayNews, selectOnThisDay } from './otdSlice';
 
 export function OnThisDay() {
   const { error, status: otdNewsStatus, value: otdNewsValue } = useAppSelector(selectOnThisDay);

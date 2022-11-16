@@ -1,4 +1,4 @@
-import { fetchOnThisDay, getOtdUrl } from './onThisDayAPI';
+import { fetchOnThisDay, getOtdUrl } from './otdAPI';
 
 let originalFetch = global.fetch;
 

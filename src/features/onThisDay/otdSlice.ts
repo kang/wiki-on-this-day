@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import { RootState } from '../../app/store';
-import { fetchOnThisDay } from './onThisDayAPI';
+import { fetchOnThisDay } from './otdAPI';
 
 interface SerializedError {
   name?: string

@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import reducer, { compareNewsByYear, fetchOnThisDayNews, initialState } from './onThisDaySlice';
+import reducer, { compareNewsByYear, fetchOnThisDayNews, initialState } from './otdSlice';
 
-const fetchOnThisDayMock: jest.Mock = require('./onThisDayAPI').fetchOnThisDay;
+const fetchOnThisDayMock: jest.Mock = require('./otdAPI').fetchOnThisDay;
 
-jest.mock('./onThisDayAPI', () => ({
+jest.mock('./otdAPI', () => ({
   fetchOnThisDay: jest.fn(),
 }));
 

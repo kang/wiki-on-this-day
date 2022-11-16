@@ -1,6 +1,6 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 
-import otdNewsReducer from '../features/onThisDay/onThisDaySlice';
+import otdNewsReducer from '../features/onThisDay/otdSlice';
 
 export const store = configureStore({
   reducer: {
