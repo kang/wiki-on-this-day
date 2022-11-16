@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20%;
+  text-align: center;
+  align-items: center;
+}
+
+.spinner {
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  border-top-color: #000;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+.errorModal {
+  position: absolute;
+  width: 280px;
+  height: 210px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.4);
+  text-align: center;
+  overflow: hidden;
+  animation: show-modal .7s ease-in-out;
+}
+
+.closeErrorModalButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modalTitle {
+  margin: 15px 0;
+}
+
+.errorMessage {
+  color: red;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  text-align: left;
+}
+
+.header {
+  font-size: 1.7em;
+}
+
+.button {
+  width: 120px;
+  margin: 15px;
+  font-size: 1.4em;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  border: 2px solid rgba(112, 76, 182, 0.4);
+}
+
+.button:active {
+  background-color: rgba(112, 76, 182, 0.2);
+}
